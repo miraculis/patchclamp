@@ -20,7 +20,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 #include <QDialog>
 #include <QComboBox>
-#include "ui_Description.h"
 /*
 class MainWindow : public QMainWindow, private Ui::MainWindow
 {

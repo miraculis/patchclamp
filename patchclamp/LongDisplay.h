@@ -21,8 +21,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <QDateTime>
 #include <QTime>
 #include <QWidget>
-#include <phonon/mediaobject.h>
-#include <phonon/audiooutput.h>
+#include <QtMultimedia/QAudioOutput>
+#include <QFile>
 
 #include "common.h"
 
@@ -117,9 +117,10 @@ private:
 
 public:
 #if USE_SOUND
-    Phonon::MediaObject * SealingSound,*  BreakingSound;
-    Phonon::AudioOutput * DisplayAudioOutput;
-    Phonon::Path phononpath;
+    QFile * SealingSound,*  BreakingSound;
+    QAudioOutput * DisplayAudioOutput;
+    //Phonon::Path phononpath;
+
 #endif
 
     double Rs() {return SealResistance;}

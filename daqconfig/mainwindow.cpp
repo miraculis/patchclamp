@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <sys/mman.h>
 #include <stdio.h>
+#include "ui_mainwindow.h"
 
 
 comedi_t *it = NULL;
